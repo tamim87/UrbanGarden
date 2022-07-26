@@ -67,9 +67,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Asset\Images\flat mono_locked-icon.png" />
+    <Content Include="Asset\Images\flat mono_mail-icon.png" />
+    <Content Include="Asset\Images\flat mono_phone-icon.png" />
+    <Content Include="Asset\Images\flat mono_security-icon.png" />
+    <Content Include="Asset\Images\flat mono_stack-icon.png" />
+    <Content Include="Asset\Images\flat mono_star-icon.png" />
+    <Content Include="Asset\Images\flat mono_typography-icon.png" />
+    <Content Include="Asset\Images\flat mono_unlocked-icon.png" />
+    <Content Include="Asset\Images\flatpack_locked-icon.png" />
+    <Content Include="Asset\Images\flatpack_mail-icon.png" />
+    <Content Include="Asset\Images\flatpack_phone-icon.png" />
+    <Content Include="Asset\Images\flatpack_security-icon.png" />
+    <Content Include="Asset\Images\flatpack_stack-icon.png" />
+    <Content Include="Asset\Images\flatpack_star-icon.png" />
+    <Content Include="Asset\Images\flatpack_typography-icon.png" />
+    <Content Include="Asset\Images\flatpack_unlocked-icon.png" />
     <Content Include="Asset\Images\hand_holding_seedling.png" />
     <Content Include="Asset\Images\leaf.png" />
+    <Content Include="Asset\Images\rocket.png" />
     <Content Include="Asset\Images\seedling_solid.png" />
+    <Content Include="Asset\Images\succulent.jpg" />
+    <Content Include="Asset\Images\succulent_cropped.jpg" />
     <Content Include="Asset\Images\tree-deciduous.png" />
     <Content Include="Asset\Lib\Bootstrap\css\bootstrap-grid.css" />
     <Content Include="Asset\Lib\Bootstrap\css\bootstrap-grid.min.css" />

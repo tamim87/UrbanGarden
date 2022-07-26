@@ -15,7 +15,7 @@ namespace UrbanGarden2._0.View
             Con = new Models.Functions();
         }
         public static string Sname;
-        int SKey;
+        public static int SKey;
         public override void VerifyRenderingInServerForm(Control control)
         {
 
@@ -30,6 +30,7 @@ namespace UrbanGarden2._0.View
                 if (EmailId.Value == "admin@gmail.com" && UserPasswordTb.Value == "admin")
                 {
                     Response.Redirect("Admin/Sellers.aspx");
+                    Session["id"] = EmailId.Value;
                 }
                 else
                 {
@@ -40,7 +41,7 @@ namespace UrbanGarden2._0.View
             {
                 string Query = "select Sellid, SellName, SellEmail, SellPassword from SellerTb1 where SellEmail = '{0}' and SellPassword = '{1}'";
                 Query = string.Format(Query, EmailId.Value, UserPasswordTb.Value);
-                DataTable dt = Con.getaData(Query);
+                DataTable dt = Con.getData(Query);
                 if (dt.Rows.Count == 0)
                 {
                     infomsg.InnerText = "Invalid User";
@@ -49,7 +50,9 @@ namespace UrbanGarden2._0.View
                 {
                     Sname = EmailId.Value;
                     SKey = Convert.ToInt32(dt.Rows[0][0].ToString());
-                    Response.Redirect("Admin/Dashboard.aspx");
+                    Response.Redirect("Seller/Billing.aspx");
+                    Session["id"] = EmailId.Value;
+                    //Response.Redirect("Seller/Billin.aspx");
                 }
             }
         }

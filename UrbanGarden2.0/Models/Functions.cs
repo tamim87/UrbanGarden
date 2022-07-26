@@ -23,7 +23,7 @@ namespace UrbanGarden2._0.Models
             cmd.Connection = Con;
         }
 
-        public DataTable getaData(string Query)
+        public DataTable getData(string Query)
         {
             dt = new DataTable();
             sda = new SqlDataAdapter(Query, ConnString);

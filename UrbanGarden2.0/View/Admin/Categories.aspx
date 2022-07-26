@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Categories.aspx.cs" Inherits="UrbanGarden2._0.View.Admin.Categories" %>
+﻿<%@ Page Title="Categories" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Categories.aspx.cs" Inherits="UrbanGarden2._0.View.Admin.Categories" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Mybody" runat="server">
@@ -37,14 +37,13 @@
                 </div>--%>
 
                 <br /><br />
-
                 <label id="ErrMsg" runat="server" class="text-danger"></label>
                 <br /><br />
 
-                <asp:Button text="   Edit   " class="btn btn-danger" runat="server" ID="EditBtn" OnClick="EditBtn_Click"/>
-                <asp:Button text="   Save   " class="btn btn-danger" runat="server" ID="SaveBtn" OnClick="SaveBtn_Click"/>
-                <asp:Button text="   Delete   " class="btn btn-danger" runat="server" ID="DeleteBtn" OnClick="DeleteBtn_Click1"/>
-                <br />
+                <asp:Button text="     Edit     " class="btn btn-dark" runat="server" ID="EditBtn" OnClick="EditBtn_Click"/>
+                <asp:Button text="     Save     " class="btn btn-dark" runat="server" ID="SaveBtn" OnClick="SaveBtn_Click"/>
+                <asp:Button text="     Delete     " class="btn btn-dark" runat="server" ID="DeleteBtn" OnClick="DeleteBtn_Click1"/>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>
 
             <div class="col-md-8">

@@ -4,8 +4,27 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Urban Garden Login</title>
     <link rel="stylesheet" href="../Asset/Lib/Bootstrap/css/bootstrap.min.css"/>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        
+        body{
+            background-image: url("/Asset/Images/succulent_cropped.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        img{
+            opacity:0.01;
+            padding:0px, 0px, 90px, 0px;
+            float:left;
+        }
+        
+    </style>
 
 </head>
 <body>
@@ -18,19 +37,20 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-4">
-                <img src="../Asset/Images/tree-deciduous.png" class="img-fluid"/>
+                <img src="../Asset/Images/tree-deciduous.png" alt="no img"  class="img-fluid"/>
             </div>
-            <div class="col-md-4">
-                <h1>Sign Up</h1>
+            <%--<div class="col-1"></div>--%>
+            <div class="col-md-4"><br /><br /><br /><br />
+                <h1 class="text-danger">Sign In</h1>
                 
                 <form runat="server">
                     <div class="mb-3">
-                    <label for="EmailId" class="form-label">Email address</label>
+                    <label for="EmailId" class="form-label text-danger">Email address</label>
                     <input type="email" class="form-control" id="EmailId" runat="server" required="required">
                     </div>
 
                     <div class="mb-3">
-                    <label for="UserPasswordTb" class="form-label">Password</label>
+                    <label for="UserPasswordTb" class="form-label text-danger">Password</label>
                     <input type="password" class="form-control" id="UserPasswordTb" runat="server" required="required">
                     </div>
                     
@@ -43,7 +63,7 @@
                     
                     <div class="mb-3 d-grid">
                         <label id="infomsg" runat="server" class="text-danger"></label>
-                        <asp:Button Text="  Login  " class="btn btn-danger btn-block" runat="server" ID="SaveBtn" OnClick="SaveBtn_Click1" />
+                        <asp:Button Text="  Login  " class="btn btn-dark btn-block" runat="server" ID="SaveBtn" OnClick="SaveBtn_Click1" />
                 
                     </div>
 

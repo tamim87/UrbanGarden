@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="UrbanGarden2._0.View.Admin.WebForm1" %>
+﻿<%@ Page Title="Products" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="UrbanGarden2._0.View.Admin.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Mybody" runat="server">
@@ -13,22 +13,23 @@
             
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Product Name</label>
-                    <input type="text" class="form-control" id="PNameTb">
+                    <input type="text" class="form-control" id="PNameTb" runat="server">
                 </div>
                 
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Product Category</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1">
+                    <%--<input type="text" class="form-control" id="CategoryTb" runat="server">--%>
+                    <asp:DropDownList ID="CategoryCb" class="form-control" runat="server" ></asp:DropDownList>
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Product Price</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1">
+                    <input type="text" class="form-control" id="PriceTb" runat="server">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Product Quantity</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1">
+                    <input type="text" class="form-control" id="ProductQtyTb" runat="server">
                 </div>
 
                 <%--<div class="mb-3">
@@ -36,15 +37,20 @@
                     <input type="date" class="form-control" id="ExpDate">
                 </div>--%>
 
+                <label id="ErrMsg" runat="server" class="text-danger"></label>
+                <br /><br />
 
-                <asp:Button text="   Edit   " class="btn btn-danger" runat="server"/>
-                <asp:Button text="   Save   " class="btn btn-danger" runat="server"/>
-                <asp:Button text="   Delete   " class="btn btn-danger" runat="server"/>
-
+                <asp:Button text="   Edit   " class="btn btn-dark" runat="server" ID="EditBtn" OnClick="EditBtn_Click"/>
+                <asp:Button text="   Save   " class="btn btn-dark" runat="server" ID="SaveBtn" OnClick="SaveBtn_Click"/>
+                <asp:Button text="   Delete   " class="btn btn-dark" runat="server" ID="DeleteBtn" OnClick="DeleteBtn_Click"/>
+                <br /><br /><br />
             </div>
 
             <div class="col-md-8">
                 <!--table start-->
+                <asp:GridView runat="server" class="table table-hover" ID="ProductGV" AutoGenerateSelectButton="True" OnSelectedIndexChanged="ProductGV_SelectedIndexChanged" >
+
+                </asp:GridView>
             </div>
         
         </div>

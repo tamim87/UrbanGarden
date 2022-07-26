@@ -24,7 +24,7 @@ namespace UrbanGarden2._0.View.Admin
         private void ShowSellers()
         {
             string Query = "select *from SellerTb1";
-            SellerGV.DataSource = Con.getaData(Query);
+            SellerGV.DataSource = Con.getData(Query);
             SellerGV.DataBind();
         }
 
@@ -92,7 +92,7 @@ namespace UrbanGarden2._0.View.Admin
                     string Phone = PhoneTb.Value;
                     string Address = SellAddressTb.Value;
 
-                    string Query = "update SellerTb1 set Sellname = '{0}', SellEmail = '{1}', SellPassword = '{2}', SellPhone = '{3}', SellAddress = '{4}' where Sellid = {5}";
+                    string Query = "update SellerTb1 set Sellname = '{0}', SellEmail = '{1}', SellPassword = '{2}', SellPhone = '{3}', SellAddress = '{4}' where SellId = {5}";
                     Query = string.Format(Query, SName, SEmail, Password, Phone, Address, Convert.ToInt32(SellerGV.SelectedRow.Cells[1].Text));
                     Con.SetData(Query);
                     ShowSellers();
