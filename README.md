@@ -10,7 +10,7 @@
 
 
 ## Introduction
-Urban Garden is a Website which helps Sellers to sell all kinds of plants to buyers. There is a separate section for Admin and Sellers to use the website. Admin can manage which plants are going to be available at any given moment. Admin can monitor sellers.
+Urban Garden is a website which helps Sellers to sell all kinds of plants to buyers. There is a separate section for Admin and Sellers to use the website. Admin can manage which plants are going to be available at any given moment. Admin can monitor sellers.
  
 Admin can do Create, Read, Update, Delete operations for managing the website. 
 Sellers will be able to pick certain plants for customers and generate bills for those plants. <br>
@@ -40,7 +40,9 @@ Admin will be responsible for maintaining and monitoring the website and has the
 
 ## Made_with
 [`ASP.NET`](https://dotnet.microsoft.com/en-us/apps/aspnet)
-[`Bootstrap`](https://getbootstrap.com) `Javascript` `CSS` `HTML` `SQL`
+[`Bootstrap`](https://getbootstrap.com) 
+[`SQL Server Management Studio`](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
+`Javascript` `CSS` `HTML`
 
 
 
